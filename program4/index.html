@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pizza Corner</title>
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <h3>Pizza Corner</h3>
+        <br />
+        <div>
+            <label for="pizza">Plain thin-crust pizzas</label>
+            <select id="pizza">
+                <option value="" disabled selected>-- select size --</option>
+                <option value="99">Small</option>
+                <option value="199">Medium</option>
+                <option value="399">Large</option>
+            </select>
+            <br />
+            <input type="checkbox" id="deeppan" />
+            <label for="deeppan">Deep pan</label>
+            <br />
+            <label for="toppings">Extra toppings</label>
+            <select id="toppings">
+                <option value="" selected disabled>
+                    -- select toppings --
+                </option>
+                <option value="15">Mushrooms</option>
+                <option value="10">Olives</option>
+                <option value="30">Fingermail</option>
+                <option value="20">Spicy Beef</option>
+            </select>
+            <br />
+            <input type="checkbox" id="homedelivery" />
+            <label for="homedelivery">Home Delivery</label>
+            <br /><br />
+            <button id="bill">calculate bill</button>
+        </div>
+    </body>
+</html>

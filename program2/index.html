@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Program 2</title>
+        <style>
+            ul {
+                padding: 0;
+            }
+        </style>
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <label for="part">Select a computer part:</label><br />
+        <select id="part" name="part">
+            <option value="" selected disabled>Choose parts</option>
+            <option value="monitors">Monitors</option>
+            <option value="motherboards">Motherboards</option>
+            <option value="chips">Chips</option>
+            <option value="hard-drives">Hard Drives</option>
+            <option value="dvd-roms">DVD-ROMs</option>
+            <option value="cases">Cases</option>
+            <option value="power-supplies">Power Supplies</option>
+        </select>
+        <br />
+        <br />
+        <label for="features">Features</label><br />
+        <input type="text" id="features" />
+        <ul id="feature"></ul>
+        <button id="addParts">Add Parts</button>
+        <br />
+        <div>
+            <p>Items:</p>
+            <ul id="parts"></ul>
+        </div>
+    </body>
+</html>

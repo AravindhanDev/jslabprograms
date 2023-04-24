@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <style>
+            input {
+                border: none;
+            }
+
+            table,
+            tr,
+            th,
+            td {
+                border: 2px solid gray;
+            }
+
+            th {
+                text-align: right;
+                color: blue;
+            }
+
+            td {
+                text-align: left;
+                color: red;
+                font-weight: 600;
+            }
+        </style>
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Consumed Units</th>
+                <td>
+                    <input type="number" id="units" placeholder="units" />
+                </td>
+            </tr>
+            <tr>
+                <th>Total current charges</th>
+                <td class="totalCurrentCharges"></td>
+            </tr>
+            <tr>
+                <th>Current charges Rs.</th>
+                <td class="currentCharges"></td>
+            </tr>
+            <tr>
+                <th>Fixex Cost Rs. (+)</th>
+                <td>50.0</td>
+            </tr>
+            <tr>
+                <th>Subsidy Fixed Cost Rs.(-)</th>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th>New Subsidy Rs.(-)</th>
+                <td>
+                    <input type="number" id="subsidy" placeholder="subsidy" />
+                </td>
+            </tr>
+            <tr>
+                <th>Net Amount Rs.</th>
+                <td class="netAmount"></td>
+            </tr>
+        </table>
+    </body>
+</html>
